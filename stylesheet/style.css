@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+
+    /* font */
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+#main {
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+    /* Allow wrapping for better responsiveness */
+}
+
+/* left */
+.left {
+    width: 30vw;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Ensure content is spaced properly */
+}
+
+/* nav */
+.nav {
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.nav a {
+    text-decoration: none;
+    padding-bottom: 0.2rem;
+    transition: color 0.3s, border-bottom 0.3s, padding-bottom 0.3s;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.nav i {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 2rem;
+}
+
+.left .nav a:first-child {
+    margin-right: 4.5rem;
+    margin-left: 1rem;
+    font-size: 1.6rem;
+    color: rgb(176, 164, 164);
+}
+
+.left .nav a:first-child:hover {
+    color: black;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid rgb(175, 174, 174);
+}
+
+.left .nav a:nth-child(2) {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(176, 164, 164);
+}
+
+.left .nav a:nth-child(2):hover {
+    color: black;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid rgb(175, 174, 174);
+}
+
+.left .nav a:nth-child(3) {
+    margin: 0rem 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(176, 164, 164);
+}
+
+.left .nav a:nth-child(3):hover {
+    color: black;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid rgb(175, 174, 174);
+}
+
+.left .nav a:nth-child(4) {
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+    color: rgb(44, 177, 189);
+}
+
+.left .nav a:nth-child(4):hover {
+    color: black;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid rgb(175, 174, 174);
+}
+
+/* text */
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+}
+
+.text :first-child {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.text :nth-child(2) {
+    font-size: 1.3rem;
+    color: rgb(175, 174, 174);
+    margin: 2rem 0rem;
+}
+
+.text :last-child {
+    font-size: 1.3rem;
+    color: #000;
+    text-transform: capitalize;
+    text-decoration: none;
+    border-bottom: 2px solid rgb(175, 174, 174);
+    padding-bottom: 0.8rem;
+}
+
+/* right */
+.right {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Ensure content is spaced properly */
+}
+
+/* right top */
+.right-top {
+    display: flex;
+    width: 100%;
+}
+
+/* top-right-left */
+.top-right-left {
+    width: 50%;
+    height: 50vh;
+    background-image: url(https://images.unsplash.com/photo-1621054143165-33e0e77558d2?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+/* top-right-right */
+.top-right-right {
+    width: 50%;
+    height: 50vh;
+    background-image: url(https://images.unsplash.com/photo-1622267224551-8063a2d4fbb4?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+/* right-bottom */
+.right-bottom {
+    width: 100%;
+    height: 50vh;
+    background-image: url(https://images.unsplash.com/photo-1611076351766-d561d39b6af3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+/* responsiveness */
+@media only screen and (max-width: 500px) {
+    #main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #main .left,
+    #main .right {
+        width: 100%;
+    }
+
+    .right-top,
+    .right-bottom,
+    .top-right-left,
+    .top-right-right {
+        width: 100%;
+    }
+}

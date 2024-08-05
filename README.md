@@ -1,2 +1,5 @@
 # Landing-page-2
-I am creating this website with HTML and Css and this website responsive for mobile devices also.
+I am creating this Landing Page with HTML and CSS and this Landing Page is responsive for mobile devices also.
+
+Click This Link To Try Out Landing Page 2:
+https://scriptwithsaad.github.io/Landing-page-2/
